@@ -14,7 +14,7 @@ console.log("mediaRecorder.start");
 setTimeout(() => {
   mediaRecorder.stop();
   console.log("mediaRecorder.stop");
-}, 2000);
+}, 1000);
 
 function record(element) {
   const options = { mimeType: "video/webm; codecs=vp9" };
