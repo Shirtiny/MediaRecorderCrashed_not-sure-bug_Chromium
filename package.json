@@ -1,0 +1,19 @@
+{
+  "name": "mediarecordercrashed_not-sure-bug_chromium",
+  "version": "1.0.0",
+  "description": "1. Create a \"canvas\", get the \"offscreenCanvas\" by \"transferControlToOffscreen\".\r 2. Transfer the \"offscreenCanvas\" to any Worker.\r 3. Use \"MediaRecorder\" to record the origin \"canvas\", and stop record after any second.\r 4. In worker, call the \"offscreenCanvas\"'s \"Canvas context API\" after that record stopped. Then, the page crashed with \"STATUS_ACCESS_VIOLATION\" .",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server ./ -p 4000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shirtiny/MediaRecorderCrashed_not-sure-bug_Chromium.git"
+  },
+  "author": "Shirtiny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shirtiny/MediaRecorderCrashed_not-sure-bug_Chromium/issues"
+  },
+  "homepage": "https://github.com/Shirtiny/MediaRecorderCrashed_not-sure-bug_Chromium#readme"
+}
