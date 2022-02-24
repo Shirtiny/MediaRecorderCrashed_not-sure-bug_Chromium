@@ -1,7 +1,7 @@
 /*
  * @Author: Shirtiny
  * @Date: 2022-02-18 13:12:56
- * @LastEditTime: 2022-02-18 14:08:43
+ * @LastEditTime: 2022-02-24 10:15:58
  * @Description:
  */
 self.onmessage = (e) => {
@@ -11,8 +11,8 @@ self.onmessage = (e) => {
   const ctx = offscreenCanvas.getContext("2d");
   ctx.strokeText("wait 2 seconds", 50, 100);
   
-  setTimeout(() => {
-    console.log(ctx);
+  setInterval(() => {
+    // console.log(ctx);
     ctx.fillStyle = "red";
     ctx.fillText("Crashed：STATUS_ACCESS_VIOLATION", 50, 100);
   }, 2000);
